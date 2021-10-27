@@ -7,7 +7,7 @@ pipeline{
 			withAnt(installation: 'Ant_1.10.12', jdk: 'jdk1.8.0_161') {
     // some block
 
-		     sh 'ant -f PipelineAntbuild/build.xml'
+		     sh 'ant -f build.xml'
 		  }
 }		  
 		 }
