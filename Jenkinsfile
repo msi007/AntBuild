@@ -14,7 +14,7 @@ pipeline{
 		stage('Test'){
 			agent {label 'master'}
 			steps{
-			junit allowEmptyResults: true, testResults: 'PipelineAntbuild/build/test-reports/*.xml'
+			junit allowEmptyResults: true, testResults: '/build/test-reports/*.xml'
 			}
 		} 
 	}
