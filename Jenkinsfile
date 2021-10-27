@@ -3,12 +3,12 @@ pipeline{
 	stages{
 		stage('Build'){
 		    steps{
-		     sh 'ant -f PipelineAntbuild@script/build.xml'
+		     sh 'ant -f PipelineAntbuild/build.xml'
 		  }
 		 }
 		stage('Test'){
 			steps{
-			junit allowEmptyResults: true, testResults: 'PipelineAntbuild@script/build/test-reports/*.xml'
+			junit allowEmptyResults: true, testResults: 'PipelineAntbuild/build/test-reports/*.xml'
 			}
 		} 
 	}
