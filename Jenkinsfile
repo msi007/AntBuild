@@ -3,7 +3,7 @@ pipeline{
 	stages{
 		stage('Build'){
 		    steps{
-		     sh 'ant -f PipelineAntbuild@script/biuld.xml'
+		     sh 'ant -f PipelineAntbuild@script/build.xml'
 		  }
 		 }
 		stage('Test'){
